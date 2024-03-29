@@ -8,5 +8,3 @@ from cocotb.triggers import ClockCycles
 @cocotb.test()
 async def test_adder(dut):
   dut._log.info("Start")
-  
-  dut.ui_in.value = 0
