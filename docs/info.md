@@ -11,6 +11,10 @@ You can also include images in this folder and reference them in the markdown. E
 
 EL proyecto es un multiplicador sencillo de 2 bits para cada entrada a,b. Se realizó describiendo el circuito con compiertas lógicas utilizando multiplicaciones con compuertas AND y medios sumadores con la combinación de compuertas AND y XOR. Este circuito es completamente combinacional y es una aplicación práctica sencilla y didáctica para obtener un circuito físico final a partir de la descripción en verilog.
 
+<div style="text-align:center;">
+  
+![Multiplicador de 2 bits](mult_2b.png)
+
 |  A1  |  A0  |  B1  |  B0  |  P3  |  P2  |  P1  |  P0  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |   0  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |
@@ -29,7 +33,7 @@ EL proyecto es un multiplicador sencillo de 2 bits para cada entrada a,b. Se rea
 |   1  |   1  |   0  |   1  |   0  |   0  |   1  |   1  |
 |   1  |   1  |   1  |   0  |   0  |   1  |   1  |   0  |
 |   1  |   1  |   1  |   1  |   1  |   0  |   0  |   1  |
-
+</div>
 
 
 
