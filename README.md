@@ -1,41 +1,39 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+# Multiplicador de 2 bits
 
-- [Read the documentation for project](docs/info.md)
+EL proyecto es un multiplicador sencillo de 2 bits para cada entrada a,b. Se realizó describiendo el circuito con compiertas lógicas utilizando multiplicaciones con compuertas AND y medios sumadores con la combinación de compuertas AND y XOR. Este circuito es completamente combinacional y es una aplicación práctica sencilla y didáctica para obtener un circuito físico final a partir de la descripción en verilog.
+  
+<img src="mult_2b_1.png" alt="Multiplicador de 2 bits" width="400" height="300">
 
-## What is Tiny Tapeout?
+  |  A1  |  A0  |  B1  |  B0  |  P3  |  P2  |  P1  |  P0  |
+  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |
+  |   0  |   0  |   0  |   1  |   0  |   0  |   0  |   0  |
+  |   0  |   0  |   1  |   0  |   0  |   0  |   0  |   0  |
+  |   0  |   0  |   1  |   1  |   0  |   0  |   0  |   0  |
+  |   0  |   1  |   0  |   0  |   0  |   0  |   0  |   0  |
+  |   0  |   1  |   0  |   1  |   0  |   0  |   0  |   1  |
+  |   0  |   1  |   1  |   0  |   0  |   0  |   1  |   0  |
+  |   0  |   1  |   1  |   1  |   0  |   0  |   1  |   1  |
+  |   1  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |
+  |   1  |   0  |   0  |   1  |   0  |   0  |   1  |   0  |
+  |   1  |   0  |   1  |   0  |   0  |   1  |   0  |   0  |
+  |   1  |   0  |   1  |   1  |   0  |   1  |   1  |   0  |
+  |   1  |   1  |   0  |   0  |   0  |   0  |   0  |   0  |
+  |   1  |   1  |   0  |   1  |   0  |   0  |   1  |   1  |
+  |   1  |   1  |   1  |   0  |   0  |   1  |   1  |   0  |
+  |   1  |   1  |   1  |   1  |   1  |   0  |   0  |   1  |
 
-TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
 
-To learn more and get started, visit https://tinytapeout.com.
 
-## Verilog Projects
+## How to test
 
-1. Add your Verilog files to the `src` folder.
-2. Edit the [info.yaml](info.yaml) and update information about your project, paying special attention to the `source_files` and `top_module` properties. If you are upgrading an existing Tiny Tapeout project, check out our [online info.yaml migration tool](https://tinytapeout.github.io/tt-yaml-upgrade-tool/).
-3. Edit [docs/info.md](docs/info.md) and add a description of your project.
-4. Optionally, add a testbench to the `test` folder. See [test/README.md](test/README.md) for more information.
+Las entradas del circuito de 2 bits, a y b, deben conectarse a interruptores como lo pueden ser DIP switch, con sus respectivas resistencias. Las salida out de 4 bits se puede conectar a leds, de igual manera con sus respectivas resistencias para evitar dañar algún componente.
 
-The GitHub action will automatically build the ASIC files using [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/).
+## External hardware
 
-## Enable GitHub actions to build the results page
+El hardware externo utilizado es:
 
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
-
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://docs.google.com/document/d/1aUUZ1jthRpg4QURIIyzlOaPWlmQzr-jBn3wZipVUPt4)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@matthewvenn](https://twitter.com/matthewvenn)
+-DIP switch 4 posiciones.
+-4 lEDS.
