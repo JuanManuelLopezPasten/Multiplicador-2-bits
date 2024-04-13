@@ -31,6 +31,8 @@ EL proyecto es un multiplicador sencillo de 2 bits para cada entrada a,b. Se rea
 
 Las entradas del circuito de 2 bits, a y b, deben conectarse a interruptores como lo pueden ser DIP switch, con sus respectivas resistencias. Las salida out de 4 bits se puede conectar a leds, de igual manera con sus respectivas resistencias para evitar dañar algún componente.
 
+<img src="latin2_1.jpg" alt="Multiplicador de 2 bits" width="400" height="300">
+
 ## External hardware
 
 El hardware externo utilizado es:
